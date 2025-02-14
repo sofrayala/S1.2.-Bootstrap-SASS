@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="../src/bootstrap.bundle.min.js"></script>
+    <title>1.2 Bootsrap and Saas</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-5 m-5">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"
+          ><img
+            src="/Imagenes/logo-bookmark.svg"
+            alt="logo-bookmark"
+            width="100%"
+            height="24"
+            class="d-inline-block align-text-top"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
+            <li class="nav-item">
+              <a class="nav-link px-4" aria-current="page" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex mx-3" role="search">
+            <button class="btn btn-danger px-4" type="log-in">LOGIN</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navBarfin -->
+
+    <!-- Ejercicio1 -->
+
+    <div class="row py-5">
+      <div class="col-6 align-items-center px-5">
+        <div class="container-fluid p-5 m-5">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favorite websirtes.
+            Open a new browser tab and see your sites loas instantly. Try it for
+            free.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary btn-sm me-2 button-padding"
+          >
+            Get it on Chrome
+          </button>
+          <button
+            type="button"
+            class="btn btn-light btn-sm shadow-sm button-padding"
+          >
+            Get it on Firefox
+          </button>
+        </div>
+      </div>
+
+      <div class="col-6 align-items-center">
+        <img
+          src="/Imagenes/illustration-hero.svg"
+          class="img-fluid"
+          alt="computer-image"
+        />
+      </div>
+    </div>
+    <!-- Fin ejercicio1 -->
+
+    <!-- Ejercicio2 -->
+    <div class="d-flex justify-content-center align-items-center my-5">
+      <div class="col-4 text-center">
+        <h1>Features</h1>
+        <p>
+          Our aim is to make it quick and easy for yout to access your favorite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+    </div>
+    <!-- Tabs -->
+    <ul
+      class="nav nav-underline d-flex justify-content-center align-items-center my-5"
+      id="underlined-navbar"
+    >
+      <li class="nav-item mx-5" role="presentation">
+        <a
+          class="nav-link active"
+          id="bookmarking-tab"
+          data-bs-toggle="tab"
+          href="#bookmarking"
+          role="tab"
+          aria-controls="bookmarking"
+          aria-selected="true"
+          >Simple Bookmarking</a
+        >
+      </li>
+      <li class="nav-item mx-5" role="presentation">
+        <a
+          class="nav-link"
+          id="searching-tab"
+          data-bs-toggle="tab"
+          href="#searching"
+          role="tab"
+          aria-controls="searching"
+          aria-selected="false"
+          >Speedy Searching</a
+        >
+      </li>
+      <li class="nav-item mx-5" role="presentation">
+        <a
+          class="nav-link"
+          id="sharing-tab"
+          data-bs-toggle="tab"
+          href="#sharing"
+          role="tab"
+          aria-controls="sharing"
+          aria-selected="false"
+          >Easy Sharing</a
+        >
+      </li>
+    </ul>
+
+    <!-- ////////////////////// -->
+
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="bookmarking"
+        role="tabpanel"
+        aria-labelledby="bookmarking-tab"
+      >
+        <!-- Imagen & text -->
+
+        <div class="row py-5">
+          <div class="col-6 align-items-center">
+            <img
+              src="/Imagenes/illustration-features-tab-1.svg"
+              class="img-fluid ms-5 ps-5"
+              alt="computer-image"
+            />
+          </div>
+          <div class="col-6 align-items-center px-5">
+            <div class="container-fluid p-5 m-5">
+              <h2>Bookmark in one click</h2>
+              <p class="pe-5 me-5">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favorite sites.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm me-2 button-padding"
+              >
+                More info
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Imagen & text fin -->
+      </div>
+      <div
+        class="tab-pane fade"
+        id="searching"
+        role="tabpanel"
+        aria-labelledby="searching-tab"
+      >
+        <!-- Imagen & text -->
+
+        <div class="row py-5">
+          <div class="col-6 align-items-center">
+            <img
+              src="/Imagenes/illustration-features-tab-2.svg"
+              class="img-fluid ms-5 ps-5"
+              alt="computer-image"
+            />
+          </div>
+          <div class="col-6 align-items-center px-5">
+            <div class="container-fluid p-5 m-5">
+              <h2>Intelligent search</h2>
+              <p class="pe-5 me-5">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to twarl through all of your bookmarks.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm me-2 button-padding"
+              >
+                More info
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Imagen & text fin -->
+      </div>
+      <div
+        class="tab-pane fade"
+        id="sharing"
+        role="tabpanel"
+        aria-labelledby="sharing-tab"
+      >
+        <!-- Imagen & text -->
+
+        <div class="row py-5">
+          <div class="col-6 align-items-center">
+            <img
+              src="/Imagenes/illustration-features-tab-3.svg"
+              class="img-fluid ms-5 ps-5"
+              alt="computer-image"
+            />
+          </div>
+          <div class="col-6 align-items-center px-5">
+            <div class="container-fluid p-5 m-5">
+              <h2>Share your bookmarks</h2>
+              <p class="pe-5 me-5">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm me-2 button-padding"
+              >
+                More info
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Imagen & text fin -->
+      </div>
+    </div>
+    <!-- /////////////// -->
+
+    <!-- fin ejercicio2 -->
+
+    <!--Ejercicio3 -->
+    <div class="d-flex justify-content-center align-items-center my-5">
+      <div class="col-4 text-center">
+        <h1>Download the extension</h1>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-center mx-5 card-container-custom-height"
+    >
+      <!-- card1 -->
+      <div class="card border-0 shadow me-4 fixed-height" id="card1">
+        <img
+          src="/Imagenes/logo-chrome.svg"
+          class="card-img-top img-fluid my-5 py-1"
+          alt="logo-chrome"
+          id="card-image1"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Add to Chrome</h5>
+          <p class="card-text">Minimum version 62</p>
+          <img
+            src="/Imagenes/bg-dots.svg"
+            class="d-flex my-4"
+            alt="bg-dots"
+            id="bg-dots"
+          />
+          <a href="#" class="btn btn-primary btn-sm button-padding"
+            >Add & install extension</a
+          >
+        </div>
+      </div>
+      <!-- card2 -->
+      <div
+        class="card border-0 shadow me-4 fixed-height custom-card2"
+        id="card2"
+      >
+        <img
+          src="/Imagenes/logo-firefox.svg"
+          class="card-img-top img-fluid my-5 py-1"
+          alt="logo-chrome"
+          id="card-image2"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Add to Firefox</h5>
+          <p class="card-text">Minimum version 55</p>
+          <img
+            src="/Imagenes/bg-dots.svg"
+            class="d-flex my-4"
+            alt="bg-dots"
+            id="bg-dots"
+          />
+          <a href="#" class="btn btn-primary btn-sm button-padding"
+            >Add & install extension</a
+          >
+        </div>
+      </div>
+      <!-- card3 -->
+      <div
+        class="card border-0 shadow me-4 fixed-height custom-card3"
+        id="card3"
+      >
+        <img
+          src="/Imagenes/logo-opera.svg"
+          class="card-img-top img-fluid my-5 py-1"
+          alt="logo-opera"
+          id="card-image3"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Add to Opera</h5>
+          <p class="card-text">Minimum version 46</p>
+          <img
+            src="/Imagenes/bg-dots.svg"
+            class="d-flex my-4"
+            alt="bg-dots"
+            id="bg-dots"
+          />
+          <a href="#" class="btn btn-primary btn-sm button-padding"
+            >Add & install extension</a
+          >
+        </div>
+      </div>
+      <!-- end of cards -->
+    </div>
+    <!--fin ejercicio3 -->
+    <!-- Ejercicio4 -->
+    <div class="d-flex justify-content-center align-items-center my-5">
+      <div class="col-4 text-center">
+        <h1>Download the extension</h1>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
