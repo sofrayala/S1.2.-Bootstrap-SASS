@@ -10,18 +10,17 @@
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-5 m-5">
+    <nav class="navbar navbar-expand-lg bg-white p-3" id="main-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="#"
+        <a class="navbar-brand" href="#"
           ><img
             src="/Imagenes/logo-bookmark.svg"
             alt="logo-bookmark"
-            width="100%"
             height="24"
             class="d-inline-block align-text-top"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -32,19 +31,19 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link px-4" aria-current="page" href="#">FEATURES</a>
+              <a class="nav-link px-3" aria-current="page" href="#">FEATURES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="#">PRICING</a>
+              <a class="nav-link px-3" href="#">PRICING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="#">CONTACT</a>
+              <a class="nav-link px-3" href="#">CONTACT</a>
             </li>
           </ul>
-          <form class="d-flex mx-3" role="search">
-            <button class="btn btn-danger px-4" type="log-in">LOGIN</button>
+          <form class="d-flex" role="search">
+            <button class="btn btn-danger px-4" type="button">LOGIN</button>
           </form>
         </div>
       </div>
@@ -53,43 +52,45 @@
 
     <!-- Ejercicio1 -->
 
-    <div class="row py-5">
-      <div class="col-6 align-items-center px-5">
-        <div class="container-fluid p-5 m-5">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
-            A clean and simple interface to organize your favorite websirtes.
-            Open a new browser tab and see your sites loas instantly. Try it for
-            free.
-          </p>
-          <button
-            type="button"
-            class="btn btn-primary btn-sm me-2 button-padding"
-          >
-            Get it on Chrome
-          </button>
-          <button
-            type="button"
-            class="btn btn-light btn-sm shadow-sm button-padding"
-          >
-            Get it on Firefox
-          </button>
-        </div>
-      </div>
-
-      <div class="col-6 align-items-center">
+    <div class="row py-5 d-flex align-items-center">
+      <div class="col-12 col-md-6 order-1 order-md-2 text-center">
         <img
           src="/Imagenes/illustration-hero.svg"
           class="img-fluid"
           alt="computer-image"
         />
       </div>
+      <div
+        class="col-12 col-md-6 order-2 order-md-1 px-5 text-center text-md-start"
+      >
+        <div class="container-fluid p-3 p-md-5">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favorite websirtes.
+            Open a new browser tab and see your sites loas instantly. Try it for
+            free.
+          </p>
+          <div
+            class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2"
+          >
+            <button type="button" class="btn btn-primary btn-sm button-padding">
+              Get it on Chrome
+            </button>
+            <button
+              type="button"
+              class="btn btn-light btn-sm shadow-sm button-padding"
+            >
+              Get it on Firefox
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Fin ejercicio1 -->
 
     <!-- Ejercicio2 -->
     <div class="d-flex justify-content-center align-items-center my-5">
-      <div class="col-4 text-center">
+      <div class="col-12 col-md-4 text-center">
         <h1>Features</h1>
         <p>
           Our aim is to make it quick and easy for yout to access your favorite
@@ -141,7 +142,8 @@
       </li>
     </ul>
 
-    <!-- ////////////////////// -->
+    <!-- /////////Content///////////// -->
+    <!-- Tab 1 -->
 
     <div class="tab-content" id="myTabContent">
       <div
@@ -150,20 +152,20 @@
         role="tabpanel"
         aria-labelledby="bookmarking-tab"
       >
-        <!-- Imagen & text -->
-
-        <div class="row py-5">
-          <div class="col-6 align-items-center">
+        <div
+          class="row py-5 d-flex align-items-center text-center text-md-start"
+        >
+          <div class="col-12 col-md-6 order-1 order-md-1">
             <img
               src="/Imagenes/illustration-features-tab-1.svg"
-              class="img-fluid ms-5 ps-5"
+              class="img-fluid"
               alt="computer-image"
             />
           </div>
-          <div class="col-6 align-items-center px-5">
-            <div class="container-fluid p-5 m-5">
+          <div class="col-12 col-md-6 order-2 order-md-2 px-5">
+            <div class="container-fluid p-3 p-md-5">
               <h2>Bookmark in one click</h2>
-              <p class="pe-5 me-5">
+              <p>
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favorite sites.
@@ -177,28 +179,29 @@
             </div>
           </div>
         </div>
-        <!-- Imagen & text fin -->
       </div>
+      <!-- Tab1 fin -->
+      <!-- Tab2 -->
       <div
         class="tab-pane fade"
         id="searching"
         role="tabpanel"
         aria-labelledby="searching-tab"
       >
-        <!-- Imagen & text -->
-
-        <div class="row py-5">
-          <div class="col-6 align-items-center">
+        <div
+          class="row py-5 d-flex align-items-center text-center text-md-start"
+        >
+          <div class="col-12 col-md-6 order-1 order-md-1">
             <img
               src="/Imagenes/illustration-features-tab-2.svg"
               class="img-fluid ms-5 ps-5"
               alt="computer-image"
             />
           </div>
-          <div class="col-6 align-items-center px-5">
-            <div class="container-fluid p-5 m-5">
+          <div class="col-12 col-md-6 order-2 order-md-2 px-5">
+            <div class="container-fluid p-3 p-md-5">
               <h2>Intelligent search</h2>
-              <p class="pe-5 me-5">
+              <p>
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to twarl through all of your bookmarks.
               </p>
@@ -211,28 +214,29 @@
             </div>
           </div>
         </div>
-        <!-- Imagen & text fin -->
       </div>
+      <!-- Tab 2 fin -->
+      <!--Tab 3-->
       <div
         class="tab-pane fade"
         id="sharing"
         role="tabpanel"
         aria-labelledby="sharing-tab"
       >
-        <!-- Imagen & text -->
-
-        <div class="row py-5">
-          <div class="col-6 align-items-center">
+        <div
+          class="row py-5d-flex align-items-center text-center text-md-start"
+        >
+          <div class="col-12 col-md-6 order-1 order-md-1">
             <img
               src="/Imagenes/illustration-features-tab-3.svg"
               class="img-fluid ms-5 ps-5"
               alt="computer-image"
             />
           </div>
-          <div class="col-6 align-items-center px-5">
-            <div class="container-fluid p-5 m-5">
+          <div class="col-12 col-md-6 order-2 order-md-2 px-5">
+            <div class="container-fluid p-3 p-md-5-5">
               <h2>Share your bookmarks</h2>
-              <p class="pe-5 me-5">
+              <p>
                 Easily share your bookmarks and collections with others. Create
                 a shareable link that you can send at the click of a button.
               </p>
@@ -245,10 +249,9 @@
             </div>
           </div>
         </div>
-        <!-- Imagen & text fin -->
       </div>
     </div>
-    <!-- /////////////// -->
+    <!-- tab3 fin -->
 
     <!-- fin ejercicio2 -->
 
@@ -351,7 +354,6 @@
       </div>
     </div>
     <div class="row col-5 py-0 mx-auto">
-      <!-- <div class="col-5"> -->
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -434,7 +436,6 @@
               this would look in a real-world application.
             </div>
           </div>
-          <!-- </div> -->
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -463,6 +464,18 @@
           </div>
         </div>
       </div>
+      <div class="py-4 text-center">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm me-2 button-padding"
+          id="button-faqs"
+        >
+          More info
+        </button>
+      </div>
     </div>
+
+    <!-- Medias queries -->
+    @media (min-width: 576px) { }
   </body>
 </html>

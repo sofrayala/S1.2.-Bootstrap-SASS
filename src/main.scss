@@ -6,8 +6,17 @@ $secondary: #fa5959;
 
 // Then add additional custom code here
 // Custom styles for the underlined navbar
+html,
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
-  background: white;
+  max-width: 100%;
+}
+
+#main-navbar {
+  background: none;
 }
 
 .button-padding {
@@ -67,4 +76,9 @@ $secondary: #fa5959;
 }
 .fixed-height {
   height: 425px;
+}
+
+#button-faqs {
+  width: fit-content;
+  height: auto;
 }

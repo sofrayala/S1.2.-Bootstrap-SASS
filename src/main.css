@@ -11965,8 +11965,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
-  background: white;
+  max-width: 100%;
+}
+
+#main-navbar {
+  background: none;
 }
 
 .button-padding {
@@ -12022,4 +12031,10 @@ textarea.form-control-lg {
 
 .fixed-height {
   height: 425px;
+}
+
+#button-faqs {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
