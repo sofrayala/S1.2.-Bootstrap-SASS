@@ -43,11 +43,11 @@ body {
     }
   }
 }
-//Custom styles for the cards section
+
+//Custom styles for the cards
 #card-image1,
 #card-image2 {
   height: auto;
-  // width: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -56,29 +56,30 @@ body {
 
 #card-image3 {
   height: auto;
-  // width: 11%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 
-.card-container-custom-height {
-  height: 500px;
+#card-container {
+  display: flex;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
-.custom-card2 {
-  align-self: center;
+#card1 {
+  position: relative;
+  margin-top: -3rem;
 }
 
-.custom-card3 {
-  align-self: flex-end;
-}
-.fixed-height {
-  height: 425px;
+#card3 {
+  position: relative;
+  margin-top: 3rem;
 }
 
-#button-faqs {
-  width: fit-content;
-  height: auto;
-}
+// @media (max-width: 567px) {
+//   #card2 {
+//     margin;
+//   }
+// }
