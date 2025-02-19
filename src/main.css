@@ -11970,12 +11970,45 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-  max-width: 100%;
+body p {
+  color: grey;
 }
 
 #main-navbar {
   background: none;
+}
+
+.navbar {
+  max-width: 100%;
+}
+
+#nav-bar-features:hover,
+#nav-bar-pricing:hover,
+#nav-bar-contact:hover {
+  background-color: none !important;
+  color: #fa5959 !important;
+}
+
+#nav-bar-login-button:hover,
+#form-button:hover {
+  background-color: white !important;
+  color: #fa5959 !important;
+  border-color: #fa5959 !important;
+}
+
+#button-get-it-chrome:hover,
+#button-card1:hover,
+#button-card2:hover,
+#button-card3:hover {
+  background-color: white !important;
+  color: #5265e1 !important;
+  border-color: #5265e1 !important;
+}
+
+#button-get-it-firefox:hover {
+  background-color: white !important;
+  color: rgb(104, 102, 102) !important;
+  border-color: rgb(104, 102, 102) !important;
 }
 
 .button-padding {
@@ -12015,6 +12048,26 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+#card-container {
+  display: flex;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+#card1 {
+  position: relative;
+  top: -3rem;
+}
+
+#card3 {
+  position: relative;
+  top: 3rem;
+}
+
+.accordion-button:hover {
+  color: #fa5959;
 }
 
 #form-container {
