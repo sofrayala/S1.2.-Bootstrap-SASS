@@ -12017,24 +12017,21 @@ body {
   width: 40%;
 }
 
-.card-container-custom-height {
-  height: 500px;
+#form-container {
+  background-color: #5265e1;
+  color: white;
+  padding-bottom: 3rem;
 }
 
-.custom-card2 {
-  align-self: center;
+#form-button {
+  background-color: #fa5959;
 }
 
-.custom-card3 {
-  align-self: flex-end;
-}
-
-.fixed-height {
-  height: 425px;
-}
-
-#button-faqs {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
+@media (min-width: 768px) {
+  .w-md-60 {
+    width: 60% !important;
+  }
+  .w-md-35 {
+    width: 35% !important;
+  }
 }/*# sourceMappingURL=main.css.map */

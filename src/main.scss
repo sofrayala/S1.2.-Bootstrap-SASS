@@ -62,24 +62,22 @@ body {
   width: 40%;
 }
 
-// #card-container {
-//   display: flex;
-//   padding-bottom: 3rem;
-//   padding-top: 3rem;
-// }
+//Custom styles form
+#form-container {
+  background-color: $primary;
+  color: white;
+  padding-bottom: 3rem;
+}
 
-// #card1 {
-//   position: relative;
-//   margin-top: -3rem;
-// }
+#form-button {
+  background-color: $secondary;
+}
 
-// #card3 {
-//   position: relative;
-//   margin-top: 3rem;
-// }
-
-// @media (max-width: 567px) {
-//   #card2 {
-//     margin;
-//   }
-// }
+@media (min-width: 768px) {
+  .w-md-60 {
+    width: 60% !important;
+  }
+  .w-md-35 {
+    width: 35% !important;
+  }
+}
