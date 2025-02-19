@@ -11984,7 +11984,8 @@ body p {
 
 #nav-bar-features:hover,
 #nav-bar-pricing:hover,
-#nav-bar-contact:hover {
+#nav-bar-contact:hover,
+#footer-nav-link:hover {
   background-color: none !important;
   color: #fa5959 !important;
 }
