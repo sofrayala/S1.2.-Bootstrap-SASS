@@ -1,11 +1,8 @@
-// Include any default variable overrides here (though functions won't be available)
 $primary: #5265e1;
 $secondary: #fa5959;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
-// Custom styles for the underlined navbar
 html,
 body {
   overflow-x: hidden;
@@ -78,7 +75,6 @@ body {
   }
 }
 
-//Custom styles for the cards
 #card-image1,
 #card-image2 {
   height: auto;
@@ -116,7 +112,6 @@ body {
   color: $secondary;
 }
 
-//Custom styles form
 #form-container {
   background-color: $primary;
   color: white;
